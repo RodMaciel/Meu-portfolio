@@ -549,11 +549,7 @@ footer span a:hover{
     text-decoration: underline;
 }
 /* responsividade */
-@media (max-width: 1300px){
-    .navbar .max-width{
-        margin-left: 0;
-    }
-}
+
 @media (max-width: 1104px) {
     .about .about-content .left img {
             width: 350px;
