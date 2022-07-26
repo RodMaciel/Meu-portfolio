@@ -89,6 +89,7 @@ color: yellowgreen;
     color: #fff;
     animation: backInDown;
     animation-duration: 1.5s;
+    display: block;
 }
 .home .home-content .text-2 {
     font-size: 75px;
