@@ -9,11 +9,20 @@
 html {
     scroll-behavior: smooth;
 }
-.max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
+/* custum scroll bar */
+::-webkit-scrollbar{
+    width: 10px;
 }
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: yellowgreen;
+}
+
 /* navbar inicio */
 .navbar {
     position: fixed;
@@ -49,6 +58,7 @@ color: yellowgreen;
     display: inline-block;
     }
 .navbar .menu li a {
+    display: block;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -140,19 +150,29 @@ color: yellowgreen;
     pointer-events: none;
     transition: all 0.3s ease;
 }
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
 /* codigos similares */
 section {
     padding: 100px 0;
 
 }
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
 section .title {
-    font-family: 'Ubuntu', sans-serif;
+    position: relative;
     text-align: center;
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    position: relative;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 section .title::before {
@@ -176,13 +196,14 @@ section .title::after {
     padding: 5px;
     transform: translateX(-50%);
 }
-.about, .projetos, .skills, .contact, footer {
+.about, .projetos, .skills, .contact, .hobbies footer {
     font-family: 'Roboto', sans-serif;
 }
 
 .about .about-content,
 .projetos .proj-content,
-.skills .skills-content {
+.skills .skills-content,
+.contact .contact-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -234,14 +255,16 @@ section .title::after {
 
 }
 /* sessao projetos */
-.projetos {
+.projetos, .hobbies {
     background: #111;
     color: #fff;
 }
-.projetos .title::before{
+.projetos .title::before, 
+.hobbies .title::before{
     background: #fff;
 }
-.projetos .title::after{
+.projetos .title::after,
+.hobbies .title::after{
     background: #111;
     content: "Realizados";
 
@@ -358,26 +381,61 @@ section .title::after {
     width: 42%;
 
 }
+/* sessao hobbies */
+.hobbies .title::after{
+    content: "e passa tempo";
+}
+.hobbies .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease; 
+}
+.hobbies .carousel .card:hover{
+    background: yellowgreen;
+}
+.hobbies .carousel .card img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid yellowgreen;
+    transition: all 0.3s ease;
+}
+.hobbies .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hobbies .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
 /* sessao contato */
 .contact .title::after{
     content: "Fale comigo";
 }
 .contact .contact-content .column{
-    width:calc(50% - 30px);
+    width: calc(50% - 30px);
     }
 .contact .contact-content {
     align-items: flex-start;
 }
 .contact .contact-content .left p {
     text-align: justify;
-    }
+}
 .contact .contact-content .text{
     font-size: 20px;
     font-weight:500;
     margin-bottom:10px;
 }
 .contact .contact-content .left .icons{
-    margin:10px;
+    margin: 10px 0;
 }
 .contact .contact-content .row{
     display: flex;
@@ -461,7 +519,6 @@ footer{
     padding: 20px 23px;
     color: #fff;
     text-align: center;
-
 }
 footer span a {
     color: yellowgreen;
@@ -499,7 +556,11 @@ footer span a:hover{
             z-index: 999; 
         } 
   .menu-btn i.active:before {
-         content: "/f00d";
+         content: "Me contrate :(";
+         font-size: 15px;
+         font-weight: 500;
+         color: red;
+
          }
         .navbar .menu{
             position: fixed;
@@ -556,6 +617,7 @@ footer span a:hover{
          .skills .skills-content .column,
          .contact .contact-content .column{
             width: 100%;
+            margin-bottom: 35px;
          }
 }
 @media (max-width: 690px){
@@ -582,6 +644,27 @@ footer span a:hover{
     .home .home-content .text-3 {
         font-size: 27px;
     }
-
+    .about .about-content .right .text,
+    .projetos .proj-content .left .text{
+        font-size: 19px;
+    }
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+    .right form .error-box{
+        width: 150px;
+    }
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
 }
 }
