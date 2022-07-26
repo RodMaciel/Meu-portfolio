@@ -1,6 +1,16 @@
 $('#design.card').click(function () {
-    window.location = "http://pt.stackoverflow.com/";
+    window.open('https://google.com', '_blank');
+
 });
-$('#reforma.card').click(function () {
-    window.location = "http://google.com/";
+$('#reyna.card').click(function () {
+    window.open('https://google.com', '_blank');
+
+});
+$('#jett.card').click(function () {
+    window.open('https://facebook.com', '_blank');
+
+});
+$('#skills.a').click(function () {
+    window.open('https://support.wwf.org.uk', '_blank');
+
 });
