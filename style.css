@@ -614,11 +614,11 @@ footer span a:hover{
              font-size: 35px;
      }
      .home .home-content a {
-        font-size: 20px;
-
+        font-size: 23px;
+        padding: 10px 30px;
      }
          .about .about-content .column{
-            width: 50%;
+            width: 1000%;
 
          }
         .about .about-content .left {
@@ -649,7 +649,7 @@ footer span a:hover{
             font-size: 60px;
         }
         .home .home-content .text-3{
-            font-size: 35px;
+            font-size: 32px;
         }
         .home .home-content a {
             font-size: 20px;
