@@ -118,8 +118,9 @@ color: yellowgreen;
     margin-top: 20px;
     border-radius: 6px;
     border: 2px solid yellowgreen;
-    animation: backInUp;
+    animation: tada;
     animation-duration: 3s;
+    animation-delay: 3;
 }
 .home .home-content a:hover{
     color: yellowgreen;
@@ -231,6 +232,8 @@ section .title::after {
 }
 .about .about-content .right p{
     text-align: justify;
+    animation: backInRight;
+    animation-duration: 1.5s;
 }
 .about .about-content .right a {
     display: inline-block;
@@ -242,16 +245,22 @@ section .title::after {
     border-radius: 6px;
     border: 2px solid;
     transition: all 0.3s ease;
+    animation: bounce;
+    animation-duration: 3.5s;
 }
 .about .about-content .right a:hover {
     color: yellowgreen;
     background: none;
+    animation: backInDown;
+    animation-duration: 1.5s;
 }
 .about .about-content .left img {
     width: 400px;
     height: 400px;
     object-fit: cover;
     border-radius: 6px;
+    animation: backInLeft;
+    animation-duration: 1.5s;
 
 }
 /* sessao projetos */
