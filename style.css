@@ -247,13 +247,13 @@ section .title::after {
     border: 2px solid;
     transition: all 0.3s ease;
     animation: bounce;
-    animation-duration: 3.5s;
+    animation-duration: 4.5s;
 }
 .about .about-content .right a:hover {
     color: yellowgreen;
     background: none;
-    animation: backInDown;
-    animation-duration: 1.5s;
+    animation: bounce;
+    animation-duration: 4.5s;
 }
 .about .about-content .left img {
     width: 400px;
