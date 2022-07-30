@@ -27,7 +27,7 @@ html {
 .navbar {
     position: fixed;
     width: 100%;
-    padding: 3px 0;
+    padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     z-index: 999;
     transition: all 0.3s ease;   
@@ -74,7 +74,7 @@ color: yellowgreen;
 /* Style da Home 8 */
 .home {
     display: flex;
-    background: url(image/paris\ 2.jpg) no-repeat;
+    background: url(image/paris\ 2.jpg) no-repeat center;
     height: 100vh;
     color: #fff;
     min-width: 500px;
@@ -82,19 +82,23 @@ color: yellowgreen;
     background-size: cover;
 }
 .home .max-width{
-    margin: auto 0 auto 40px;
+    width: 100%;
+    display: flex;
+}
+.home .max-width .row {
+    margin-right: 0;
 }
 .home .home-content .text-1 {
     font-size: 27px;
     color: #fff;
     animation: backInDown;
     animation-duration: 1.5s;
-    display: block;
+
 }
 .home .home-content .text-2 {
     font-size: 75px;
-    font-weight: 500;
-    margin-left: -3;
+    font-weight: 600;
+    margin-left: -3px;
     color: #fff;
     animation: backInRight;
     animation-duration: 1.5s;
@@ -117,6 +121,7 @@ color: yellowgreen;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
+    font-weight: 400;
     border-radius: 6px;
     border: 2px solid yellowgreen;
     animation: tada;
@@ -199,7 +204,7 @@ section .title::after {
     transform: translateX(-50%);
 }
 .about, .projetos, .skills, .contact, .hobbies footer {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .about .about-content,
@@ -312,7 +317,7 @@ section .title::after {
 }
 /* sessao skills */
 .skills .title::after{
-    content: "Que faço";
+    content: "em programação";
 
 }
 .skills .skills-content .column{
@@ -393,7 +398,9 @@ section .title::after {
 }
 /* sessao hobbies */
 .hobbies .title::after{
-    content: "e passa tempo";
+    content: "em reforma!!";
+    font-weight: 200;
+
 }
 .hobbies .carousel .card{
     background: #222;

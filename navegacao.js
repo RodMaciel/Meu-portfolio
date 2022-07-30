@@ -10,7 +10,7 @@ $('#jett.card').click(function () {
     window.open('https://facebook.com', '_blank');
 
 });
-$('#skills.a').click(function () {
-    window.open('https://support.wwf.org.uk', '_blank');
+$('#login.card').click(function () {
+    window.open('assets/Proj tela login/index.html', '_blank');
 
 });
