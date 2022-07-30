@@ -56,7 +56,7 @@ $(document).ready(function () {
         autoplayTimeOut: 2000,
         autoplayHoverPause: true,
         responsive: {
-            300: {
+            400: {
                 items: 1,
                 nav: false
             },
