@@ -13,6 +13,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+            <script type="text/javascript">
+                (function () {
+                    // https://dashboard.emailjs.com/admin/account
+                    emailjs.init('ovTry-EU8Tsrcojcx');
+                })();
+            </script>
 </head>
 <body>
     <div class="scroll-up-btn">
@@ -198,12 +204,8 @@
                 <h2 class="title">Contato</h2>
                 <div class="contact-content">
                     <div class="column left">
-                        <div class="text">Fale Conosco</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit laudantium saepe, voluptate
-                            libero fugiat in, dolores voluptatem distinctio animi et iusto, amet possimus tenetur modi
-                            cupiditate. Odio, numquam fuga perferendis vitae ullam eum, ipsam tempora unde nisi optio vero
-                            recusandae ipsa asperiores rem, labore impedit laudantium officiis maiores natus.</p>
-        
+                        <div class="text">Entre em contato comigo:</div>
+                        <p>Me envie um email ou pode entrar em contato via redes sociais e estarei entrando em contato assim que possivel...</p>
                         <div class="icons">
                             <div class="row">
                                 <ion-icon name="person-outline"></ion-icon>
@@ -234,21 +236,21 @@
                         <form action="#">
                             <div class="fields">
                                 <div class="field name">
-                                    <input type="text" placeholder="Nome" required>
+                                    <input type="text" id="toName"placeholder="Nome" required>
                                 </div>
                                 <div class="field email">
-                                    <input type="email" placeholder="Email" required>
+                                    <input type="email" id="from_email"placeholder="Email" required>
                                 </div>
                             </div>
                             <div class="field">
                                 <div class="field">
-                                    <input type="text" placeholder="Sobrenome" required>
+                                    <input type="text" id="sobrenome" placeholder="Sobrenome" required>
                                 </div>
                                 <div class="field textarea">
-                                    <textarea cols="30" rows="10" placeholder="Escreva..." required></textarea>
+                                    <textarea cols="30" id="msg"rows="10" placeholder="Escreva..." required></textarea>
                                 </div>
                                 <div class="button">
-                                    <button type="submit">Enviar</button>
+                                    <button onclick='sendMail()'>Enviar</button>
                                 </div>
                             </div>
                         </form>
@@ -264,6 +266,8 @@
                 </a>
                 <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/rodrigo-maciel-b5764621b/" class="social__item">
                     <img src="https://ag.digital/wp-content/uploads/2019/03/icon-linkedin.svg">
+                    <a target="_blank" rel="noopener" href="https://github.com/RodMaciel" class="social__item">
+                                        <img src="image/github.png"id="github">
                 </a>
             </div>
         </section>
@@ -276,6 +280,13 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="script.js" defer></script>
     <script src="navegacao.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('ovTry-EU8Tsrcojcx');
+        })();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
 </body>
 </html>

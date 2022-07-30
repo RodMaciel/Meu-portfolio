@@ -56,7 +56,7 @@ $(document).ready(function () {
         autoplayTimeOut: 2000,
         autoplayHoverPause: true,
         responsive: {
-            0: {
+            300: {
                 items: 1,
                 nav: false
             },
@@ -122,4 +122,18 @@ function restartAnimation() {
         }, 0);
     });
 }
+// email js contato
 
+// script sendmail
+function sendMail(params) {
+    var tempParams = {
+        from_name: document.getElementById("from_email").value,
+        to_name: document.getElementById("toName").value,
+        sobrenome: document.getElementById("sobrenome").value,
+        message: document.getElementById("msg").value,
+    };
+    emailjs.send('service_8x60t8j', 'template_dh3w3eq', tempParams)
+        .then(function (res) {
+            alert("email enviado" + res.status);
+        })
+}
