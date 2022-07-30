@@ -137,3 +137,20 @@ function sendMail(params) {
             alert("email enviado" + res.status);
         })
 }
+// contato whatsapp no botao contrate-me
+jQuery(document).ready(function () {
+
+    var url = window.location.href;
+
+    var texto = encodeURIComponent(`\u{1F60D} *Nova Mensagem*
+Olá, Gostei do seu portfólio e gostaria de te fazer uma proposta!
+    
+    
+`);
+
+    var link = 'https://wa.me/5511949520396?text=' + texto;
+
+    jQuery('#zap_btn').prop('href', link);
+
+
+});
