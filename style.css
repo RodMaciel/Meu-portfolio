@@ -725,11 +725,11 @@ footer span a:hover{
         width: 100%;
                    
     }
-                 .skills .skills-content .column,
-                 .contact .contact-content .column {
-                     width: 100%;
-                     margin-bottom: 45px;
-                 }
+    .skills .skills-content .column,
+    .contact .contact-content .column {
+        width: 100%;
+        margin-bottom: 45px;
+    }
     .contact .social{
         margin-bottom: 2px;
          padding-top: 120px;
