@@ -163,6 +163,23 @@ color: yellowgreen;
     pointer-events: auto;
 }
 /* codigos similares */
+[data-anime] {
+opacity: 0;
+transition: 1s;
+}
+
+[data-anime="left"] {
+transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+transform: translate3d(50px, 0, 0);
+
+}
+[data-anime].animate {
+opacity: 1;
+transform: translate3d(0px,0px, 0px);
+}
 section {
     padding: 100px 0;
 
@@ -708,6 +725,9 @@ footer span a:hover{
         width: 100%;
                    
     }
+         .skills .skills-content .column{
+            margin: 20px;
+         }
     .contact .social{
         margin-bottom: 2px;
          padding-top: 120px;
