@@ -165,7 +165,7 @@ color: yellowgreen;
 /* codigos similares */
 [data-anime] {
 opacity: 0;
-transition: 1s;
+transition: all 0.5s ease;
 }
 
 [data-anime="left"] {
@@ -729,6 +729,9 @@ footer span a:hover{
     .contact .contact-content .column {
         width: 100%;
         margin-bottom: 45px;
+    }
+    .data-anime {
+        transform: translate3d(0,0,0);
     }
     .contact .social{
         margin-bottom: 2px;
