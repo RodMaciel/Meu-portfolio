@@ -413,6 +413,9 @@ section .title::after {
     width: 42%;
 
 }
+.skills .skills-content .right .react::before {
+    width: 43%;
+}
 /* sessao hobbies */
 .hobbies .title::after{
     content: "em reforma!!";
