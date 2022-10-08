@@ -409,12 +409,12 @@ section .title::after {
     width: 67%;
 
 }
-.skills .skills-content .right .mysql::before {
+.skills .skills-content .right .react::before {
     width: 42%;
 
 }
-.skills .skills-content .right .react::before {
-    width: 43%;
+.skills .skills-content .right .sql::before {
+    width: 53%;
 }
 /* sessao hobbies */
 .hobbies .title::after{
