@@ -14,3 +14,6 @@ $('#login.card').click(function () {
     window.open('assets/Proj tela login/index.html', '_blank');
 
 });
+$("#squad.card").click(function () {
+  window.open("https://squadteam.netlify.app/", "_blank");
+});
