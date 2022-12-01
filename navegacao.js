@@ -1,5 +1,5 @@
 $('#design.card').click(function () {
-    window.open('https://google.com', '_blank');
+    window.open("https://genimaciel.netlify.app/", "_blank");
 
 });
 $('#reyna.card').click(function () {
