@@ -76,7 +76,7 @@ const OPTS = {
     fill: 'none',
     radius: 25,
     strokeWidth: { 50: 0 },
-    scale: { 0: 1 },
+    scale: { 0: 0.7 },
     angle: { 'rand(-35, -70)': 0 },
     duration: 500,
     left: 0, top: 0,
@@ -99,11 +99,11 @@ const circle2 = new mojs.Shape({
 document.addEventListener('click', function (e) {
 
     circle1
-        .tune({ x: e.pageX, y: e.pageY })
+        .tune({ x: e.pageX , y: e.pageY })
         .replay();
 
     circle2
-        .tune({ x: e.pageX, y: e.pageY })
+        .tune({ x: e.pageX , y: e.pageY })
         .replay();
 
 });
