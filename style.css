@@ -53,6 +53,9 @@ color: yellowgreen;
     color: #fff;
     transition: all 0.3s ease;
 }
+.navbar.sticky a {
+    color: black;
+}
   .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -204,7 +207,7 @@ section .title::before {
     position: absolute;
     bottom: 0;
     left: 50%;
-    width: 180px;
+    width: 200px;
     height: 3px;
     background: #111;
     transform: translateX(-50%);
