@@ -305,7 +305,7 @@ section .title::after {
 
 }
 .projetos .proj-content .card{
-    width: calc(33% - 20px);
+    width: calc(100% - 20px);
     background: #222;
     text-align: center;
     border-radius: 6px;
@@ -331,7 +331,7 @@ section .title::after {
     transform: scale(1.05);
 }
 .projetos .proj-content .card .text {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
@@ -700,7 +700,7 @@ footer span a:hover{
             flex: 100%;
         }
         .projetos .proj-content .card{
-            width: calc(50% - 10px);
+            width: calc(80% - 10px);
             margin-bottom: 20px;
             
         }
